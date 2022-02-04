@@ -22,7 +22,7 @@ nav {
 
     .fa-bell {
         color: white;
-        margin-right: 50px;
+        
     }
 }
 
@@ -51,6 +51,20 @@ nav {
             left: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+
+}
+
+/*Footer*/ 
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    div>.icons {
+        padding: 10px;
+        font-size: 30px;
+        color: white;
     }
 
 }
