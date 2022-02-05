@@ -45,14 +45,14 @@ for (let val of myArr) {
 
 const btns = document.querySelectorAll("#btnclick");
 const number = document.getElementById("nber");
-
 let integer = 0;
 
 console.log(btns);
 
 
 btns.forEach(btn => btn.addEventListener('click', function(){
-    
+    integer += 1;
+    number.innerHTML = integer;
 }
 ));
 
