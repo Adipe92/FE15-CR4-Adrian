@@ -33,7 +33,7 @@ nav {
     background-image: url('/img/img-hero.jpg');
     position: relative;
     height: 400px;
-
+    
     .header-text {
     position: absolute;
     top: 50%;
@@ -55,16 +55,65 @@ nav {
 
 }
 
+/*main*/
+.btn-2 {
+    font-size: $btn-font-size !important;
+    font-weight: bold !important;
+    line-height: $btn-line-height !important;
+}
+
+.hr {
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.container {
+    width: 80% !important;
+
+    .fa-ellipsis-v {
+        padding-right: 0.5em;
+        cursor: pointer;
+    &:hover {
+        color: gray;
+    }
+    .fa-bookmark {
+        cursor: pointer;
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+}
+
+
+
 /*Footer*/ 
 
 footer {
     width: 100%;
     height: auto;
     background-color: black;
-    div>.icons {
-        padding: 10px;
+    .icons {
+        padding: 20px;
         font-size: 30px;
         color: white;
+            .fab {
+                cursor: pointer;
+                &:hover {
+                color: gray;
+            }
+        }
+    }
+    
+    .form-control {
+        width: 500px;
+        height: 20px;
+    }
+
+    button {
+        height: 30px;
     }
 
 }

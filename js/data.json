@@ -1,0 +1,47 @@
+let array = `[{
+    "task": "Task",
+    "name": "Washing",
+    "img": "img/1.jpg",
+    "date": "2022/03/03",
+    "importance": 0
+}, {
+    "name": "Shopping",
+    "img": "img/2.jpg",
+    "date": "2022/03/04",
+    "importance": 0
+}, {
+    "name": "Cooking",
+    "img": "img/3.jpg",
+    "date": "2022/03/05",
+    "importance": 0
+}, {
+    "name": "Jogging",
+    "img": "img/4.jpg",
+    "date": "2022/03/06",
+    "importance": 0
+}, {
+    "name": "Party",
+    "img": "img/5.jpg",
+    "date": "2022/03/07",
+    "importance": 0
+}, {
+    "name": "Mechanic",
+    "img": "img/6.jpg",
+    "date": "2022/03/08",
+    "importance": 0
+}, {
+    "name": "Library",
+    "img": "img/7.jpg",
+    "date": "2022/03/09",
+    "importance": 0
+}, {
+    "name": "Trash",
+    "img": "img/8.jpg",
+    "date": "2022/03/10",
+    "importance": 0
+}, {
+    "name": "Cinema",
+    "img": "img/9.jpg",
+    "date": "2022/03/11",
+    "importance": 0
+}]`;
