@@ -26,7 +26,7 @@ for (let val of myArr) {
                     <hr class="hr">
                     <div class="d-flex">
                     <p class="ps-3 pt-2"><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
-                    <span id="nber" class="nber" class="m-2"> ${val.importance}</span>
+                    <div id="nber" style="background-color: #198754; color: white; width: 20px; height: 25px;text-align: center; border-radius: 3px 3px 3px;" class="col-1 m-2 nber color bg-sucsess"> ${val.importance}</div>
                     </div>
                     
                     <p class="ps-3 pt-1"><i class="fas fa-calendar-week"></i> Deadline: ${val.date}</p>
@@ -48,11 +48,37 @@ const number = document.getElementsByClassName("nber");
 
 console.log(btns); 
 
+
+    
 btns.forEach((btn, i) => btn.addEventListener('click', function(){
     myArr[i].importance += 1;
     number[i].innerHTML = myArr[i].importance; 
+
+if (myArr[i].importance <= 2) {
+    document.getElementsByClassName("color")[i].style.background =  "#198754";
+} else if (myArr[i].importance >= 3 && myArr[i].importance <= 4) { document.getElementsByClassName("color")[i].style.background = "#ffc107";
+} else {
+    document.getElementsByClassName("color")[i].style.background = "#dc3545";
+}
+
 }
 ));
+
+const priority = document.getElementById("sort");
+
+for (let i = 0; i < priority.length; i++) {
+    priority[i].addEventListener('click', function () {
+        myArr[i].sort((a, b) => b.importance - a.importance);
+    })
+
+}
+
+
+
+
+
+
+
 
 
 
